@@ -1,0 +1,233 @@
+<style>
+    /* Reuse the same scoped CSS for consistency */
+    .nu-study-notes {
+        font-family: 'SolaimanLipi', 'Kalpurush', 'Nirmala UI', sans-serif;
+        line-height: 1.8;
+        color: #2d3436;
+        max-width: 100%;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 0px;
+    }
+
+    .nu-study-notes h2 {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: #ffffff !important;
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border-left: 6px solid #f1c40f;
+    }
+
+    .nu-study-notes h3 {
+        color: #2c3e50;
+        font-size: 1.3rem;
+        border-bottom: 2px solid #3498db;
+        display: inline-block;
+        padding-bottom: 8px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .nu-study-notes p { margin-bottom: 18px; text-align: justify; font-size: 1.05rem; }
+    
+    .nu-study-notes ul { list-style: none; padding-left: 0; }
+    .nu-study-notes ul li { position: relative; padding-left: 25px; margin-bottom: 10px; }
+    .nu-study-notes ul li::before { content: "➤"; position: absolute; left: 0; color: #3498db; }
+
+    /* Math Formula Box */
+    .nu-math-box {
+        background: #f4f6f7;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Times New Roman', serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #2c3e50;
+        border: 1px solid #bdc3c7;
+        margin: 20px 0;
+    }
+
+    /* Table & Figure Styles */
+    .nu-table-wrapper { overflow-x: auto; margin: 30px 0; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+    .nu-study-notes table { width: 100%; border-collapse: collapse; min-width: 650px; background-color: #fff; }
+    .nu-study-notes th { background-color: #34495e; color: #fff; padding: 15px; text-align: left; border: 1px solid #2c3e50; }
+    .nu-study-notes td { padding: 14px 16px; border: 1px solid #e0e0e0; font-size: 0.95rem; }
+    .nu-study-notes tr:nth-child(even) { background-color: #f8f9fa; }
+
+    .nu-figure { margin: 30px 0; text-align: center; background-color: #fdfdfd; padding: 15px; border: 1px solid #eee; border-radius: 8px; }
+    .nu-figure img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
+    .nu-caption { display: block; margin-top: 10px; font-size: 0.9rem; color: #7f8c8d; font-style: italic; }
+
+    /* Highlight Box */
+    .nu-highlight-box { background-color: #e8f8f5; border-left: 5px solid #1abc9c; padding: 20px; margin: 25px 0; border-radius: 4px; }
+</style>
+
+<div class="nu-study-notes">
+
+    <div id="q3">
+        <h2>৩. সমপ্রান্তিক উপযোগ বিধির চিত্রের সাহায্যে ভোক্তার ভারসাম্য ব্যাখ্যা কর</h2>
+        
+        <p><strong>ভূমিকা:</strong> উপযোগ বিশ্লেষণের ক্ষেত্রে 'সমপ্রান্তিক উপযোগ বিধি' (Law of Equi-Marginal Utility) একটি অত্যন্ত গুরুত্বপূর্ণ তত্ত্ব। ঊনবিংশ শতাব্দীতে ফরাসি অর্থনীতিবিদ <strong>H.H. Gossen</strong> সর্বপ্রথম এই বিধিটি প্রবর্তন করেন বলে একে ‘গসেনের দ্বিতীয় সূত্র’ বলা হয়। পরবর্তীতে অধ্যাপক মার্শাল এই বিধিটিকে পূর্ণাঙ্গ রূপ দেন।</p>
+
+        <h3>বিধির মূল বক্তব্য:</h3>
+        <p>একজন যুক্তিশীল ভোক্তা তার সীমিত আয় বিভিন্ন দ্রব্যের মধ্যে এমনভাবে ব্যয় করবেন, যাতে প্রতিটি দ্রব্যের শেষ একক থেকে প্রাপ্ত প্রান্তিক উপযোগ এবং তাদের দামের অনুপাত সমান হয়। এ অবস্থায় ভোক্তা সর্বোচ্চ তৃপ্তি বা ভারসাম্য লাভ করে।</p>
+
+        <h3>ভোক্তার ভারসাম্যের শর্ত:</h3>
+        <p>ভোক্তার ভারসাম্য অর্জনের জন্য দুটি শর্ত পালন করতে হয়:</p>
+        <div class="nu-math-box">
+            ১ম শর্ত: MU<sub>x</sub> / P<sub>x</sub> = MU<sub>y</sub> / P<sub>y</sub> = MU<sub>m</sub><br>
+            <span style="font-size: 0.9rem; font-weight: normal;">(এখানে, MU = প্রান্তিক উপযোগ, P = দাম, MUm = অর্থের প্রান্তিক উপযোগ)</span><br><br>
+            ২য় শর্ত: মোট ব্যয় = মোট আয় (বাজেট সীমাবদ্ধতা)
+        </div>
+
+        <h3>কাল্পনিক সূচির সাহায্যে ব্যাখ্যা:</h3>
+        <p>ধরি, ভোক্তার আয় ১০ টাকা। বাজারে দুটি দ্রব্য X এবং Y আছে। প্রতি এককের দাম যথাক্রমে ১ টাকা।</p>
+        
+        <div class="nu-table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>টাকার একক</th>
+                        <th>X দ্রব্যের প্রান্তিক উপযোগ (MUx)</th>
+                        <th>Y দ্রব্যের প্রান্তিক উপযোগ (MUy)</th>
+                        <th>অবস্থা</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>১ম টাকা</td>
+                        <td>২০ ইউটিল</td>
+                        <td>১৬ ইউটিল</td>
+                        <td>X > Y</td>
+                    </tr>
+                    <tr>
+                        <td>২য় টাকা</td>
+                        <td>১৮ ইউটিল</td>
+                        <td>১৪ ইউটিল</td>
+                        <td>X > Y</td>
+                    </tr>
+                    <tr>
+                        <td>৩য় টাকা</td>
+                        <td>১৬ ইউটিল</td>
+                        <td>১২ ইউটিল</td>
+                        <td>X > Y</td>
+                    </tr>
+                    <tr>
+                        <td>৪র্থ টাকা</td>
+                        <td>১৪ ইউটিল</td>
+                        <td>১০ ইউটিল</td>
+                        <td>X > Y</td>
+                    </tr>
+                    <tr>
+                        <td>৫ম টাকা</td>
+                        <td><strong>১২ ইউটিল</strong></td>
+                        <td>৮ ইউটিল</td>
+                        <td>ভারসাম্য নয়</td>
+                    </tr>
+                    <tr>
+                        <td>৬ষ্ঠ টাকা</td>
+                        <td>১০ ইউটিল</td>
+                        <td><strong>১২ ইউটিল</strong></td>
+                        <td><strong>MUx = MUy (ভারসাম্য)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>উপরের ছক অনুযায়ী, ভোক্তা যদি X দ্রব্যে ৬ টাকা এবং Y দ্রব্যে ৪ টাকা খরচ করে, তবে উভয় দ্রব্যের শেষ টাকার উপযোগ সমান (১২ ইউটিল) হবে। এটাই ভারসাম্যের বিন্দু।</p>
+
+        <h3>চিত্রের সাহায্যে ব্যাখ্যা:</h3>
+        <p>সমপ্রান্তিক উপযোগ বিধিটি চিত্রের সাহায্যে উপস্থাপন করা হলো:</p>
+
+        <div class="nu-figure">
+            <img src="http://bba.page.gd/wp-content/uploads/2026/01/marginal-unity.jpg" alt="Equi Marginal Utility Diagram">
+            <span class="nu-caption">চিত্র: সমপ্রান্তিক উপযোগ বিধির মাধ্যমে ভোক্তার ভারসাম্য</span>
+        </div>
+
+        <p><strong>চিত্র বিশ্লেষণ:</strong> চিত্রে ভূমি অক্ষে অর্থের একক এবং লম্ব অক্ষে প্রান্তিক উপযোগ দেখানো হয়েছে। ভোক্তা যখন তার আয়ের শেষ টাকাটি এমনভাবে বণ্টন করে যেখানে দুটি দ্রব্যের প্রান্তিক উপযোগ রেখা ছেদ করে বা সমান উচ্চতায় থাকে, সেখানেই ভারসাম্য অর্জিত হয়।</p>
+
+        <div class="nu-highlight-box">
+            <strong>সিদ্ধান্ত:</strong> সীমিত আয়ের মাধ্যমে সর্বোচ্চ তৃপ্তি পাওয়ার জন্য ভোক্তাকে অবশ্যই সমপ্রান্তিক উপযোগ বিধি অনুসরণ করতে হয়। একে ‘প্রতিস্থাপন সূত্র’ও বলা হয়।
+        </div>
+    </div>
+    <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 50px 0;">
+
+    <div id="q4">
+        <h2>৪. অর্থনীতির সংজ্ঞা দাও? অর্থনীতির আওতা ও পরিধির বিষয়বস্তু আলোচনা কর</h2>
+        
+        <p><strong>ভূমিকা:</strong> অর্থনীতি হলো একটি গতিশীল সামাজিক বিজ্ঞান। মানুষের দৈনন্দিন জীবনের আয়-ব্যয় এবং সম্পদের সঠিক ব্যবহার নিয়ে এই শাস্ত্র আলোচনা করে। বিভিন্ন অর্থনীতিবিদ বিভিন্ন সময়ে অর্থনীতির ভিন্ন ভিন্ন সংজ্ঞা দিয়েছেন।</p>
+
+        <h3>অর্থনীতির সংজ্ঞা:</h3>
+        <p>অর্থনীতির সংজ্ঞাকে প্রধানত তিনটি যুগে ভাগ করা যায়:</p>
+        <ul>
+            <li><strong>১. ধ্রুপদী সংজ্ঞা (Adam Smith):</strong> ১৭৭৬ সালে অ্যাডাম স্মিথ তার বিখ্যাত গ্রন্থ <em>"The Wealth of Nations"</em>-এ বলেন, "অর্থনীতি হলো সম্পদের বিজ্ঞান (Economics is the science of wealth)।"</li>
+            <li><strong>২. কল্যাণমূলক সংজ্ঞা (Alfred Marshall):</strong> অধ্যাপক আলফ্রেড মার্শাল বলেন, "অর্থনীতি মানুষের জীবনের সাধারণ কার্যাবলি আলোচনা করে। এটি একদিকে সম্পদের অধ্যয়ন, অন্যদিকে মানুষের কল্যাণের অধ্যয়ন।"</li>
+            <li><strong>৩. দুষ্প্রাপ্যতার সংজ্ঞা (L. Robbins):</strong> ১৯৩২ সালে অধ্যাপক লিওনেল রবিন্স সবচেয়ে গ্রহণযোগ্য সংজ্ঞা দেন। তিনি বলেন,<br>
+            <em>"অর্থনীতি হলো এমন একটি বিজ্ঞান যা অসীম অভাব এবং বিকল্প ব্যবহারযোগ্য দুষ্প্রাপ্য সম্পদের মধ্যে সম্পর্ক স্থাপনের মাধ্যমে মানব আচরণ বিশ্লেষণ করে।"</em></li>
+        </ul>
+
+        <h3>অর্থনীতির আওতা ও পরিধি (Scope of Economics):</h3>
+        <p>আধুনিক সমাজের জটিলতা বাড়ার সাথে সাথে অর্থনীতির পরিধিও ব্যাপক বৃদ্ধি পেয়েছে। এর প্রধান বিষয়বস্তুগুলো নিচে আলোচনা করা হলো:</p>
+
+        <div class="nu-table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th width="30%">প্রধান খাত</th>
+                        <th width="70%">আলোচ্য বিষয়বস্তু</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>১. অর্থনৈতিক কার্যাবলি</strong></td>
+                        <td>
+                            <strong>উৎপাদন:</strong> উপযোগ সৃষ্টি করা।<br>
+                            <strong>বিনিময়:</strong> পণ্য ও সেবার ক্রয়-বিক্রয়।<br>
+                            <strong>বন্টন:</strong> জাতীয় আয় ভূমি, শ্রম ও মূলধনের মধ্যে ভাগ করা।<br>
+                            <strong>ভোগ:</strong> ব্যবহারের মাধ্যমে উপযোগ নিঃশেষ করা।
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>২. সামষ্টিক ও ব্যাস্টিক আলোচনা</strong></td>
+                        <td>অর্থনীতি এখন আর শুধু ব্যক্তির আয়ের মধ্যে সীমাবদ্ধ নেই। এটি এখন জাতীয় আয়, মুদ্রাস্ফীতি, এবং আন্তর্জাতিক বাণিজ্যের মতো বৃহৎ বিষয়গুলোও (Macroeconomics) আলোচনা করে।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>৩. অর্থনৈতিক উন্নয়ন ও পরিকল্পনা</strong></td>
+                        <td>কিভাবে একটি দেশের দারিদ্র্য দূর করা যায়, বেকারত্ব কমানো যায় এবং দীর্ঘমেয়াদী উন্নয়ন পরিকল্পনা গ্রহণ করা যায়, তা অর্থনীতির আওতাভুক্ত।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>৪. সরকারি অর্থব্যবস্থা</strong></td>
+                        <td>সরকারের বাজেট, কর ব্যবস্থা, এবং সরকারি ঋণের প্রভাব বিশ্লেষণ করা অর্থনীতির অন্যতম কাজ।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>৫. কল্যাণ অর্থনীতি</strong></td>
+                        <td>শুধু সম্পদ বৃদ্ধি নয়, বরং সেই সম্পদ মানুষের সামাজিক কল্যাণ ও জীবনযাত্রার মান উন্নয়নে কীভাবে কাজে লাগে, তা আলোচনা করা।</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>অর্থনীতির প্রকৃতি (Nature of Economics):</h3>
+        <p>অর্থনীতি কি বিজ্ঞান না কলা?—এটি নিয়েও আলোচনা এর পরিধির অন্তর্ভুক্ত।</p>
+        <ul>
+            <li><strong>বস্তুনিষ্ঠ বিজ্ঞান (Positive Science):</strong> যা ‘কী আছে’ তা বর্ণনা করে।</li>
+            <li><strong>আদর্শনিষ্ঠ বিজ্ঞান (Normative Science):</strong> যা ‘কী হওয়া উচিত’ তা নিয়ে পরামর্শ দেয়।</li>
+        </ul>
+
+        <div class="nu-figure">
+             
+            <img src="http://bba.page.gd/wp-content/uploads/2026/01/circle-flow-of-economics.jpg" alt="Scope of Economics Chart">
+            <span class="nu-caption">চিত্র: অর্থনীতির বিষয়বস্তুর চক্রাকার প্রবাহ</span>
+        </div>
+
+        <div class="nu-highlight-box">
+            <strong>উপসংহার:</strong> আদিম সমাজে অর্থনীতির পরিধি ছোট থাকলেও বর্তমানে এটি মানুষের জন্ম থেকে মৃত্যু পর্যন্ত এবং রাষ্ট্র পরিচালনার প্রতিটি স্তরে বিস্তৃত। কেইনস (J.M. Keynes)-এর মতে, "অর্থনীতি হলো এমন একটি পদ্ধতি যা আমাদের সঠিক চিন্তা করতে শেখায়।"
+        </div>
+    </div>
+    </div>
