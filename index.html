@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Websites Dashboard</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg: #f0f4f8;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius: 16px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .category-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .category-header i {
+            color: var(--primary);
+            font-size: 1.5rem;
+            width: 30px;
+            text-align: center;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .site-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1rem;
+            border-radius: 9999px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .site-btn i {
+            color: var(--primary);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .site-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .site-btn:hover i {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-compass"></i> Essential Websites Dashboard</h1>
+            <p>Your daily digital toolkit — all in one place</p>
+        </header>
+
+        <div class="category-grid">
+            <!-- Communication -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-comments"></i> Communication
+                </div>
+                <div class="buttons-container">
+                    <a href="https://mail.google.com" target="_blank" class="site-btn"><i class="fas fa-envelope"></i> Gmail</a>
+                    <a href="https://outlook.live.com" target="_blank" class="site-btn"><i class="fas fa-envelope-open"></i> Outlook</a>
+                    <a href="https://web.whatsapp.com" target="_blank" class="site-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://telegram.org" target="_blank" class="site-btn"><i class="fab fa-telegram"></i> Telegram</a>
+                    <a href="https://zoom.us" target="_blank" class="site-btn"><i class="fas fa-video"></i> Zoom</a>
+                    <a href="https://meet.google.com" target="_blank" class="site-btn"><i class="fas fa-video"></i> Meet</a>
+                </div>
+            </div>
+
+            <!-- Banking & Finance -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-university"></i> Banking & Finance
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.paypal.com" target="_blank" class="site-btn"><i class="fab fa-paypal"></i> PayPal</a>
+                    <a href="https://venmo.com" target="_blank" class="site-btn"><i class="fas fa-mobile-alt"></i> Venmo</a>
+                    <a href="https://cash.app" target="_blank" class="site-btn"><i class="fas fa-dollar-sign"></i> Cash App</a>
+                    <a href="https://wise.com" target="_blank" class="site-btn"><i class="fas fa-globe"></i> Wise</a>
+                    <a href="https://www.chase.com" target="_blank" class="site-btn"><i class="fas fa-landmark"></i> Chase</a>
+                    <a href="https://www.bankofamerica.com" target="_blank" class="site-btn"><i class="fas fa-building-columns"></i> BofA</a>
+                </div>
+            </div>
+
+            <!-- Government & Official -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-landmark"></i> Government & Official
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.usa.gov" target="_blank" class="site-btn"><i class="fas fa-flag-usa"></i> USA.gov</a>
+                    <a href="https://www.irs.gov" target="_blank" class="site-btn"><i class="fas fa-file-invoice"></i> IRS</a>
+                    <a href="https://www.ssa.gov" target="_blank" class="site-btn"><i class="fas fa-id-card"></i> SSA</a>
+                    <a href="https://www.gov.uk" target="_blank" class="site-btn"><i class="fas fa-flag"></i> GOV.UK</a>
+                    <a href="https://www.canada.ca" target="_blank" class="site-btn"><i class="fas fa-leaf"></i> Canada.ca</a>
+                    <a href="https://www.australia.gov.au" target="_blank" class="site-btn"><i class="fas fa-globe-asia"></i> Australia.gov</a>
+                </div>
+            </div>
+
+            <!-- Healthcare -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-heartbeat"></i> Healthcare
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.webmd.com" target="_blank" class="site-btn"><i class="fas fa-stethoscope"></i> WebMD</a>
+                    <a href="https://www.mayoclinic.org" target="_blank" class="site-btn"><i class="fas fa-hospital"></i> Mayo Clinic</a>
+                    <a href="https://www.cdc.gov" target="_blank" class="site-btn"><i class="fas fa-shield-virus"></i> CDC</a>
+                    <a href="https://www.nhs.uk" target="_blank" class="site-btn"><i class="fas fa-plus-square"></i> NHS</a>
+                    <a href="https://www.mychart.com" target="_blank" class="site-btn"><i class="fas fa-folder-open"></i> MyChart</a>
+                    <a href="https://www.who.int" target="_blank" class="site-btn"><i class="fas fa-globe"></i> WHO</a>
+                </div>
+            </div>
+
+            <!-- Education & Learning -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-graduation-cap"></i> Education & Learning
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.coursera.org" target="_blank" class="site-btn"><i class="fas fa-chalkboard-teacher"></i> Coursera</a>
+                    <a href="https://www.udemy.com" target="_blank" class="site-btn"><i class="fas fa-laptop-code"></i> Udemy</a>
+                    <a href="https://www.khanacademy.org" target="_blank" class="site-btn"><i class="fas fa-book-open"></i> Khan Academy</a>
+                    <a href="https://www.edx.org" target="_blank" class="site-btn"><i class="fas fa-university"></i> edX</a>
+                    <a href="https://www.duolingo.com" target="_blank" class="site-btn"><i class="fas fa-language"></i> Duolingo</a>
+                    <a href="https://www.wikipedia.org" target="_blank" class="site-btn"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+                </div>
+            </div>
+
+            <!-- Shopping & Essentials -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-shopping-cart"></i> Shopping & Essentials
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.amazon.com" target="_blank" class="site-btn"><i class="fab fa-amazon"></i> Amazon</a>
+                    <a href="https://www.ebay.com" target="_blank" class="site-btn"><i class="fab fa-ebay"></i> eBay</a>
+                    <a href="https://www.walmart.com" target="_blank" class="site-btn"><i class="fas fa-shopping-bag"></i> Walmart</a>
+                    <a href="https://www.target.com" target="_blank" class="site-btn"><i class="fas fa-bullseye"></i> Target</a>
+                    <a href="https://www.aliexpress.com" target="_blank" class="site-btn"><i class="fas fa-ship"></i> AliExpress</a>
+                    <a href="https://www.etsy.com" target="_blank" class="site-btn"><i class="fas fa-gift"></i> Etsy</a>
+                </div>
+            </div>
+
+            <!-- News & Information -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-newspaper"></i> News & Information
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.bbc.com" target="_blank" class="site-btn"><i class="fas fa-globe-europe"></i> BBC</a>
+                    <a href="https://www.cnn.com" target="_blank" class="site-btn"><i class="fas fa-tv"></i> CNN</a>
+                    <a href="https://www.reuters.com" target="_blank" class="site-btn"><i class="fas fa-rss"></i> Reuters</a>
+                    <a href="https://apnews.com" target="_blank" class="site-btn"><i class="fas fa-bolt"></i> AP News</a>
+                    <a href="https://www.nytimes.com" target="_blank" class="site-btn"><i class="fas fa-newspaper"></i> NYT</a>
+                    <a href="https://weather.com" target="_blank" class="site-btn"><i class="fas fa-cloud-sun"></i> Weather</a>
+                </div>
+            </div>
+
+            <!-- Cloud Storage & Productivity -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-cloud"></i> Cloud & Productivity
+                </div>
+                <div class="buttons-container">
+                    <a href="https://drive.google.com" target="_blank" class="site-btn"><i class="fab fa-google-drive"></i> Google Drive</a>
+                    <a href="https://www.dropbox.com" target="_blank" class="site-btn"><i class="fab fa-dropbox"></i> Dropbox</a>
+                    <a href="https://onedrive.live.com" target="_blank" class="site-btn"><i class="fas fa-cloud"></i> OneDrive</a>
+                    <a href="https://www.icloud.com" target="_blank" class="site-btn"><i class="fab fa-apple"></i> iCloud</a>
+                    <a href="https://docs.google.com" target="_blank" class="site-btn"><i class="fas fa-file-alt"></i> Google Docs</a>
+                    <a href="https://www.notion.so" target="_blank" class="site-btn"><i class="fas fa-cube"></i> Notion</a>
+                </div>
+            </div>
+
+            <!-- Social & Professional -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-users"></i> Social & Professional
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.facebook.com" target="_blank" class="site-btn"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank" class="site-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.x.com" target="_blank" class="site-btn"><i class="fab fa-x-twitter"></i> X</a>
+                    <a href="https://www.linkedin.com" target="_blank" class="site-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.reddit.com" target="_blank" class="site-btn"><i class="fab fa-reddit"></i> Reddit</a>
+                    <a href="https://www.pinterest.com" target="_blank" class="site-btn"><i class="fab fa-pinterest"></i> Pinterest</a>
+                </div>
+            </div>
+
+            <!-- Entertainment & Media -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-film"></i> Entertainment & Media
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.netflix.com" target="_blank" class="site-btn"><i class="fas fa-play"></i> Netflix</a>
+                    <a href="https://www.youtube.com" target="_blank" class="site-btn"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://www.spotify.com" target="_blank" class="site-btn"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="https://www.hulu.com" target="_blank" class="site-btn"><i class="fas fa-tv"></i> Hulu</a>
+                    <a href="https://www.disneyplus.com" target="_blank" class="site-btn"><i class="fas fa-star"></i> Disney+</a>
+                    <a href="https://www.twitch.tv" target="_blank" class="site-btn"><i class="fab fa-twitch"></i> Twitch</a>
+                </div>
+            </div>
+
+            <!-- Travel & Navigation -->
+            <div class="category-card">
+                <div class="category-header">
+                    <i class="fas fa-map-marked-alt"></i> Travel & Navigation
+                </div>
+                <div class="buttons-container">
+                    <a href="https://maps.google.com" target="_blank" class="site-btn"><i class="fas fa-map"></i> Google Maps</a>
+                    <a href="https://www.uber.com" target="_blank" class="site-btn"><i class="fas fa-car"></i> Uber</a>
+                    <a href="https://www.lyft.com" target="_blank" class="site-btn"><i class="fas fa-taxi"></i> Lyft</a>
+                    <a href="https://www.booking.com" target="_blank" class="site-btn"><i class="fas fa-hotel"></i> Booking.com</a>
+                    <a href="https://www.expedia.com" target="_blank" class="site-btn"><i class="fas fa-plane"></i> Expedia</a>
+                    <a href="https://www.airbnb.com" target="_blank" class="site-btn"><i class="fas fa-home"></i> Airbnb</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with <i class="fas fa-heart" style="color: #ef4444;"></i> for everyday convenience — all links open in new tabs.</p>
+        </footer>
+    </div>
+</body>
+</html>
